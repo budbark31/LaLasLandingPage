@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana Sorg | Just a girl, a diploma, and a whole lot of what-ifs.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .portfolio-overlay {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .floating-cta {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="IMG_6216.jpg" alt="Lana Sorg" class="w-10 h-10 rounded-full">
+                    <span class="font-semibold text-gray-900">Lana Sorg</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-900 hover:text-purple-600">Home</a>
+                    <a href="#about" class="text-gray-900 hover:text-purple-600">About</a>
+                    <a href="#portfolio" class="text-gray-900 hover:text-purple-600">Portfolio</a>
+                    <a href="#services" class="text-gray-900 hover:text-purple-600">Services</a>
+                    <a href="#contact" class="text-gray-900 hover:text-purple-600">Contact</a>
+                    <a href="promo.html" class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition">Coming Soon</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white pb-4 px-4">
+            <a href="#home" class="block py-2 text-gray-900 hover:text-purple-600">Home</a>
+            <a href="#about" class="block py-2 text-gray-900 hover:text-purple-600">About</a>
+            <a href="#portfolio" class="block py-2 text-gray-900 hover:text-purple-600">Portfolio</a>
+            <a href="#services" class="block py-2 text-gray-900 hover:text-purple-600">Services</a>
+            <a href="#contact" class="block py-2 text-gray-900 hover:text-purple-600">Contact</a>
+            <a href="promo.html" class="block bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition mt-2 text-center">Coming Soon</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Lana Sorg</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">Just a girl, a diploma, and a whole lot of what-ifs.</h2>
+                    <p class="text-lg mb-8">New grad nurse. Storyteller. Sharing the raw, unfiltered adventure of growing up, one honest post at a time.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-purple-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition">Let's Connect</a>
+                        <a href="#portfolio" class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-purple-600 transition">See My Work</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="IMG_6216.jpg" alt="Lana Sorg" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About Lana</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <img src="IMG_6216.jpg" alt="Lana Sorg" class="rounded-lg shadow-lg w-full max-w-md">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Hi, I'm Lana —</h3>
+                    <p class="text-gray-700 mb-6">
+                        A newly graduating nurse navigating the thrilling adventure called adulthood. Through my social media journey, I share the raw, unfiltered experience of stepping into the real world with honesty, humor, and heart. With a background in nursing, social media strategy, and viral content creation, I bring a unique, empathetic voice to digital storytelling. Whether it's real-life confessions about self-doubt, inspirational content, or awareness campaigns, I strive to connect through authenticity and courage.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+                            <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                            <span class="text-gray-800">Nursing Graduate</span>
+                        </div>
+                        <div class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+                            <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                            <span class="text-gray-800">Viral Content Creator</span>
+                        </div>
+                        <div class="bg-gray-100 px-4 py-2 rounded-full flex items-center">
+                            <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                            <span class="text-gray-800">Digital Storyteller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Portfolio Showcase</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">A few projects I'm proud of — blending heart, honesty, and strategy.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md relative">
+                    <div class="relative">
+                        <img src="Logo - Recovery Services.png" alt="Silvermist Recovery Campaign" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-medium text-purple-600">Facebook, Instagram, TikTok</span>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2 mt-2">Silvermist Recovery Campaign</h3>
+                        <p class="text-gray-600 text-sm mb-2">Focused on community interaction through polls, story shares, and personal testimonials.</p>
+                        <p class="text-gray-700 text-sm mb-2"><b>Strategy:</b> Raised awareness and reduced stigma around addiction recovery in NEPA through a staged three-week campaign combining education, personal stories, and calls to action.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md relative">
+                    <div class="relative">
+                        <img src="Logo - Viral.png" alt="Viral Content Creation Tweets" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-medium text-purple-600">Twitter</span>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2 mt-2">Viral Content Creation Tweets</h3>
+                        <p class="text-gray-600 text-sm mb-2">Designed for high shareability, emotional resonance, and triggering meaningful conversations.</p>
+                        <p class="text-gray-700 text-sm mb-2"><b>Strategy:</b> Leveraged the STEPPS framework to craft viral tweets addressing issues from gender pay gaps to workplace violence in healthcare.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md relative">
+                    <div class="relative">
+                        <img src="Logo - Grad Countdown.png" alt="Graduation Countdown Vlog Series" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-medium text-purple-600">Instagram Stories & YouTube Shorts</span>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2 mt-2">Graduation Countdown Vlog Series</h3>
+                        <p class="text-gray-600 text-sm mb-2">High viewer retention and relatable audience feedback.</p>
+                        <p class="text-gray-700 text-sm mb-2"><b>Strategy:</b> Built community and engagement through vulnerable storytelling and encouraging audience participation (e.g., "Drop a comment if you're going through a big change too!").</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md relative">
+                    <div class="relative">
+                        <img src="Logo - MinuteByMinute.png" alt="Minute by Minute Series" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-medium text-purple-600">Blog & Instagram</span>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2 mt-2">Real-Life Reflection Series: “Minute by Minute”</h3>
+                        <p class="text-gray-600 text-sm mb-2">High emotional engagement and shares.</p>
+                        <p class="text-gray-700 text-sm mb-2"><b>Strategy:</b> Created deeply personal content that normalizes fear, change, and excitement simultaneously, building trust and authenticity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Services & Skills</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">How I can help you connect, engage, and grow.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Social Media Campaign Strategy</h3>
+                    <ul class="space-y-2">
+                        <li>Healthcare and Wellness focus</li>
+                        <li>Platform-Specific Engagement (Facebook, Instagram, TikTok, Twitter)</li>
+                        <li>Community Building through Authentic Personal Branding</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Viral Content & Storytelling</h3>
+                    <ul class="space-y-2">
+                        <li>Viral Content Writing (STEPPS-based techniques)</li>
+                        <li>Digital Storytelling for Emotional Engagement</li>
+                        <li>Mindfulness and Wellness Advocacy Content Creation</li>
+                        <li>Content Planning and Calendar Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloadable Resource -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-6">Free Resource: "Day by Day - Survival Guide for Day by Day Mindset"</h2>
+                    <p class="text-lg mb-8">A downloadable journal template with mindfulness prompts and small daily affirmations—perfect for anyone facing a major transition.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="downloadablecontent.pdf" download class="bg-white text-purple-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition flex items-center justify-center">
+                            <i class="fas fa-download mr-2"></i>
+                            Download Now
+                        </a>
+                        <button id="preview-pdf-btn" type="button" class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-purple-600 transition flex items-center justify-center">
+                            <i class="fas fa-eye mr-2"></i>
+                            Preview
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative floating-cta">
+                        <img src="downloadablecontent.pdf" alt="Day by Day Journal" class="rounded-lg shadow-2xl w-full max-w-md">
+                        <button id="floating-download-btn" type="button" class="absolute -bottom-4 -right-4 bg-white text-purple-600 px-4 py-2 rounded-lg shadow-lg font-bold focus:outline-none">
+                            FREE Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-10">
+                        <span class="inline-block px-3 py-1 text-sm font-semibold text-purple-600 bg-purple-100 rounded-full mb-4">Coming Soon</span>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Real Talk: Becoming a Nurse When You’re Scared Out of Your Mind</h2>
+                        <p class="text-gray-600 mb-6">A raw, heartfelt e-book chronicling the messy, beautiful journey of becoming a nurse, growing up, and figuring it out in real time.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-600 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Sign up to get early access and bonus content — because nobody has it all together, and that’s the truth.</span>
+                            </li>
+                        </ul>
+                        <form class="flex flex-col sm:flex-row gap-2" action="#" method="POST">
+                            <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500" required>
+                            <button type="submit" class="bg-purple-600 text-white px-6 py-2 rounded-md hover:bg-purple-700 transition">Notify Me</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center p-10">
+                        <div class="text-center">
+                            <img src="EBOOK_COVER_IMAGE_URL" alt="Ebook Cover" class="w-48 h-64 mx-auto mb-6 shadow-2xl transform rotate-3">
+                            <h3 class="text-xl font-bold text-white mb-2">Coming Soon</h3>
+                            <p class="text-purple-100">Be the first to know when it launches!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Let's Connect</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Ready to talk, collaborate, or just say hi? Reach out below!</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500" placeholder="you@example.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500">
+                                <option value="">Select an option</option>
+                                <option value="strategy">Social Media Strategy</option>
+                                <option value="management">Account Management</option>
+                                <option value="content">Content Creation</option>
+                                <option value="training">Training/Workshop</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-purple-600 text-white px-6 py-3 rounded-md font-medium hover:bg-purple-700 transition">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-envelope text-purple-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-900">Email</h4>
+                                    <p class="text-gray-600">lanasorg@example.com</p>
+                                </div>
+                            </div>
+                            <div class="pt-6">
+                                <h4 class="text-sm font-medium text-gray-900 mb-4">Follow Me</h4>
+                                <div class="flex space-x-4">
+                                    <a href="https://instagram.com/lanasorg" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-purple-600 hover:bg-purple-100 transition" target="_blank">
+                                        <i class="fab fa-instagram text-xl"></i>
+                                    </a>
+                                    <a href="https://tiktok.com/@lanasorg" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-purple-600 hover:bg-purple-100 transition" target="_blank">
+                                        <i class="fab fa-tiktok text-xl"></i>
+                                    </a>
+                                    <a href="https://twitter.com/lanasorg" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-purple-600 hover:bg-purple-100 transition" target="_blank">
+                                        <i class="fab fa-twitter text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Lana Sorg</h3>
+                    <p class="text-gray-400">Nurse. Storyteller. Sharing the journey of growing up, one honest post at a time.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Social Media Strategy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Viral Content Writing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Digital Storytelling</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Community Building</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://instagram.com/lanasorg" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-purple-600 transition" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@lanasorg" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-purple-600 transition" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://twitter.com/lanasorg" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-purple-600 transition" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">lanasorg@example.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Lana Sorg. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Promo page toggle
+        const promoLink = document.querySelector('a[href="#promo"]');
+        const promoSection = document.getElementById('promo');
+        const closePromo = document.getElementById('close-promo');
+        
+        if (promoLink && promoSection && closePromo) {
+            promoLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                promoSection.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closePromo.addEventListener('click', () => {
+                promoSection.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Close when clicking outside content
+            promoSection.addEventListener('click', (e) => {
+                if (e.target === promoSection) {
+                    promoSection.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#promo') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // PDF Preview Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const previewBtn = document.getElementById('preview-pdf-btn');
+            if (previewBtn) {
+                previewBtn.addEventListener('click', function() {
+                    // Use encodeURI for the file name to avoid issues with spaces
+                    window.open(encodeURI('downloadable content.pdf'), '_blank');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

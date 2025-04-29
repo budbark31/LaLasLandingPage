@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lana Sorg | Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .blog-card:hover { box-shadow: 0 10px 24px 0 rgba(118,75,162,0.12); transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="YOUR_PROFESSIONAL_PHOTO_URL_HERE" alt="Lana Sorg" class="w-10 h-10 rounded-full">
+                    <span class="font-semibold text-gray-900">Lana Sorg</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-gray-900 hover:text-purple-600">Home</a>
+                    <a href="index.html#about" class="text-gray-900 hover:text-purple-600">About</a>
+                    <a href="index.html#portfolio" class="text-gray-900 hover:text-purple-600">Portfolio</a>
+                    <a href="index.html#services" class="text-gray-900 hover:text-purple-600">Services</a>
+                    <a href="index.html#contact" class="text-gray-900 hover:text-purple-600">Contact</a>
+                    <a href="promo.html" class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition">Blog</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white pb-4 px-4">
+            <a href="index.html#home" class="block py-2 text-gray-900 hover:text-purple-600">Home</a>
+            <a href="index.html#about" class="block py-2 text-gray-900 hover:text-purple-600">About</a>
+            <a href="index.html#portfolio" class="block py-2 text-gray-900 hover:text-purple-600">Portfolio</a>
+            <a href="index.html#services" class="block py-2 text-gray-900 hover:text-purple-600">Services</a>
+            <a href="index.html#contact" class="block py-2 text-gray-900 hover:text-purple-600">Contact</a>
+            <a href="promo.html" class="block bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition mt-2 text-center">Blog</a>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="gradient-bg text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Lana's Blog</h1>
+            <p class="text-lg md:text-xl opacity-90 mb-2">Stories, reflections, and real talk from the journey of growing up, nursing, and everything in between.</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Blog Card 1 -->
+                <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden transition transform hover:shadow-lg">
+                    <img src="MINUTE_BY_MINUTE_IMAGE_URL" alt="Minute by Minute" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full mb-2">Reflection</span>
+                        <h2 class="text-xl font-semibold mb-2">Minute by Minute: Embracing Change</h2>
+                        <p class="text-gray-600 mb-4">How I learned to accept the chaos of big transitions, one mindful moment at a time.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Card 2 -->
+                <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden transition transform hover:shadow-lg">
+                    <img src="CAMPAIGN_GRAPHICS_URL" alt="Silvermist Recovery" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full mb-2">Campaign</span>
+                        <h2 class="text-xl font-semibold mb-2">Silvermist Recovery: Breaking the Stigma</h2>
+                        <p class="text-gray-600 mb-4">Behind the scenes of a campaign that brought real stories and hope to NEPA.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Card 3 -->
+                <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden transition transform hover:shadow-lg">
+                    <img src="VLOG_SERIES_IMAGE_URL" alt="Graduation Countdown" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full mb-2">Vlog</span>
+                        <h2 class="text-xl font-semibold mb-2">Graduation Countdown: Facing Adulthood</h2>
+                        <p class="text-gray-600 mb-4">Vulnerable stories and lessons from my last days as a student nurse.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Card 4 -->
+                <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden transition transform hover:shadow-lg">
+                    <img src="VIRAL_TWEETS_IMAGE_URL" alt="Viral Tweets" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full mb-2">Social Media</span>
+                        <h2 class="text-xl font-semibold mb-2">Going Viral: The Power of Honest Tweets</h2>
+                        <p class="text-gray-600 mb-4">How I use the STEPPS framework to spark conversations and create impact online.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Card 5 -->
+                <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden transition transform hover:shadow-lg">
+                    <img src="EBOOK_COVER_IMAGE_URL" alt="Ebook Coming Soon" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full mb-2">Coming Soon</span>
+                        <h2 class="text-xl font-semibold mb-2">Real Talk: Becoming a Graduate Nurse</h2>
+                        <p class="text-gray-600 mb-4">Sneak peek at my upcoming e-book and how you can get early access.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Card 6 -->
+                <div class="blog-card bg-white rounded-xl shadow-md overflow-hidden transition transform hover:shadow-lg">
+                    <img src="YOUR_PROFESSIONAL_PHOTO_URL_HERE" alt="About Lana" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full mb-2">Personal</span>
+                        <h2 class="text-xl font-semibold mb-2">Just a Girl, a Diploma, and a Whole Lot of What-Ifs</h2>
+                        <p class="text-gray-600 mb-4">My journey, my doubts, and why I share it all online.</p>
+                        <a href="#" class="text-purple-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Lana Sorg</h3>
+                    <p class="text-gray-400">Nurse. Storyteller. Sharing the journey of growing up, one honest post at a time.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="index.html#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Social Media Strategy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Viral Content Writing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Digital Storytelling</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Community Building</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://instagram.com/lanasorg" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-purple-600 transition" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@lanasorg" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-purple-600 transition" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://twitter.com/lanasorg" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-purple-600 transition" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">lanasorg@example.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 Lana Sorg. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        mobileMenuButton && mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
